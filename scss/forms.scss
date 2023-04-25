@@ -1,0 +1,88 @@
+//====================================================================================================
+._ibg {
+	position: relative;
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+body.ie {
+	._ibg {
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	._ibg img {
+		width: 0;
+		height: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+//====================================================================================================
+
+//<BUTTONS (a.btn+tab)>====================================================================================================
+.btn {
+	display: inline-flex;
+	padding: 0px 0px;
+	@media (min-width: 992px) {
+		&:hover {
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+}
+//</BUTTONS>====================================================================================================
+//<INPUT (inp+tab)>====================================================================================================
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	&:focus {
+		outline: none;
+	}
+}
+
+.input {
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	width: 100%;
+	// height: 70px;
+	height: 100%;
+	display: block;
+	padding: 0px 15px;
+	// margin: 0px -15px;
+	color: #003f5f;
+	font-size: 24px;
+	line-height: 36px;
+	transition: all 0.3s ease 0s;
+
+	
+	&::placeholder{
+		color: var(--bs-gray-light) ;
+		transition: all 0.3s ease 0s;
+	}
+	&:active, &:hover, &:focus{
+
+		color: #003f5f;
+
+		&::placeholder{
+			color: #003f5f;
+
+			
+		}
+		box-shadow: 0px 22px 80px rgba(0, 0, 0, 0.07), 0px 6.63236px 24.1177px rgba(0, 0, 0, 0.0456112), 0px 2.75474px 10.0172px rgba(0, 0, 0, 0.035), 0px 0.996336px 3.62304px rgba(0, 0, 0, 0.0243888);
+	}	
+
+
+}
+
+//</INPUT>====================================================================================================

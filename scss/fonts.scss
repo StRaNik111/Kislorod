@@ -1,0 +1,14 @@
+@font-face {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: local(""), url("/fonts/PTSans-Regular.woff2") format("woff2"), url("/fonts/PTSans-Regular.woff") format("woff");
+ }
+@font-face {
+	font-family: "Raleway";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+	src: local(""), url("/fonts/Raleway-Bold.woff2") format("woff2"), url("/fonts/Raleway-Bold.woff") format("woff");
+ }
